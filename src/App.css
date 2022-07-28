@@ -1,0 +1,166 @@
+html {
+  font-size: 62.5%; 
+}
+body {
+  background-color: darkgray;
+  font-size: 2.2rem;
+  font-weight: 500;
+  font-family: Helvetica;
+}
+#root {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  background-color: #fff;
+  border: 0.2rem solid rgb(117, 117, 117);
+  max-width: 53.6rem;
+  padding: 3rem;
+  margin: auto 1.6rem;
+}
+.mt-10 {
+  margin-top: 1rem;
+}
+.mt-20 {
+  margin-top: 2rem;
+}
+.mt-30 {
+  margin-top: 3rem;
+}
+.mt-100 {
+  margin-top: 10rem;
+}
+.heading {
+  font-size: 3.2rem;
+  margin-bottom: 0;
+}
+.text {
+  font-size: 2.2rem;
+}
+.register {
+  margin-top: 1rem;
+}
+
+.red {
+  color: #ed0637;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.hr {
+  height: 0.2rem;
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+  background-color: #767c84;
+}
+.form input {
+  border: none;
+  border-bottom: 0.2rem solid #767c84;
+  font-size: 2.2rem;
+  font-weight: 50;
+  margin-top: 3.2rem;
+}
+.form-control:focus {
+  box-shadow: none;
+}
+.form-control:focus-visible {
+  outline: 0rem;
+}
+.form-label {
+  display: flex;
+  justify-content: space-between;
+}
+.form-label.optional { 
+  color: darkgray;
+  font-size: 1.8rem;
+}
+.form .form-check-input { /* ed0637 */
+  border: 0.2rem solid darkgray;
+  border-radius: 0rem;
+  margin: 0rem;
+  margin-right: 2rem;
+  height: 3rem;
+  width: 3rem;
+  cursor: pointer;
+}
+.price {
+  font-size: 3.2rem;
+}
+.btn-red {
+  background-color: #ed0637;
+  border-color: #ed0637;
+  color: #fff;
+  padding: 1.2rem;
+  font-size: 2rem;
+  border-radius: 0rem;
+  transition: 0.3s;
+}
+.btn-red:hover {
+  color: #fff;
+  background-color: #b80b30;
+  border-color: #b80b30;
+}
+.invalid-feedback {
+  font-size: 1.6rem;
+}
+.success-message {
+  color: #4bb543;
+  font-weight: bold;
+}
+.error-message {
+  color: #ed0637;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+small {
+  color: red;
+  font-weight: bold;
+}
+.prices {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.2rem solid gray;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin: 3.2rem 0rem;
+  position: relative;
+}
+.flex-row {
+  flex-direction: row;
+  align-items: center;
+}
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button {
+  opacity: 1;
+  margin: 0;
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+.effect ~ .focus-border {  
+  position: absolute;
+  bottom: 0rem;
+  left: 50%; /* ====== radiating focus effect ======== */
+  width: 0rem;
+  height: 0.25rem;
+  background-color: #ed0637;
+  transition: 0.4s;
+}
+.effect:focus ~ .focus-border {
+  width: 100%;
+  left: 0rem;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: url("./images/calander.png") no-repeat;
+  width: 3.5rem;
+  height: 4rem;
+  background-size: 3.6rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 60rem) {
+  .container {
+    padding: 0.8rem;
+    margin: 1.2rem;
+  }
+}
