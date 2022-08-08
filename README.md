@@ -1,8 +1,6 @@
 # react-event-sign-up-form
 Demo events sign up form using React
 
-Demo events sign up form using React
-
 This form is just a demo - it does not submit server side (or accept payment!)
 
 Built mobile first, but easily added to a grid system and respond to larger breakpoints.
